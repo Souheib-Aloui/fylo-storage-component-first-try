@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --VeryDark-Blue: hsl(229, 57%, 11%);
+
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+img, svg {
+  display: block;
+  width: 100%;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--VeryDark-Blue);
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+ 
+}
+
+main {
+  flex: 1; /* this made me lose my mind */
+  max-width: 480px;
+  display: grid;
+  gap: 1rem;
+ 
+}
+
+
+
+.logo-card {
+  background-color: var(--Dark-Blue);
+  border-top-right-radius: 6rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 6rem;
+  
+}
+.logo {
+  margin-bottom: 1.5rem;
+}
+
+.logo img {
+width: 80%;
+max-width: 140px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+ul > * {
+  flex: 1;
+  max-width: fit-content;
+}
+ul li {
+  max-width: 60px;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--VeryDark-Blue);
+  border-radius: 0.6rem;
+}
+
+
+.infos-card {
+  background-color: var(--Dark-Blue);
+  border-radius: 0.6rem ;
+  padding-left:  2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+ 
+}
+
+.infos-card h1 {
+  color: var(--Pale-Blue);
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+h1 span{
+  font-weight: 700;
+}
+
+.flex-grp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Pale-Blue);
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 2.5rem;
+  
+}
+.recharge-bar {
+  padding: 0.25rem;
+  border-radius: 1rem;
+  background-color: var(--VeryDark-Blue);
+}
+.redish-bar {
+  max-width: 70%;
+  background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  padding: 0.2rem;
+  border-radius: 1rem;
+ display: flex;
+ justify-content: end;
+}
+.circle {
+  background-color: var(--Pale-Blue);
+  padding: 0.25rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+
+.white-box {
+  background-color: var(--Pale-Blue) ;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -2rem;
+  right: 4rem ;
+  left: 4rem;
+  z-index: 4;
+ 
+}
+
+.white-box p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.black-numbers {
+  color: var(--VeryDark-Blue);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.gray {
+  color: var(--Grayish-Blue);
+  font-weight: 700;
+  letter-spacing: 1px;
+}

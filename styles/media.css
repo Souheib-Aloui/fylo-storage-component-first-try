@@ -1,0 +1,78 @@
+@media (min-width: 900.1px) {
+  body {
+    padding: 4rem;
+    background-image: url(../images/bg-desktop.png);
+    background-size: unset;
+    background-position-y: bottom 0vh ;
+   
+    
+  }
+main {
+  max-width: 800px;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+
+.logo  {
+  margin-bottom: 3rem;
+}
+.logo img {
+  width: 100%;
+  max-width: 160px;
+}
+.infos-card {
+  padding-top: 2rem;
+  margin-top: 4rem;
+}
+
+.infos-card h1 {
+  text-align: left;
+}
+
+
+
+
+.redish-bar {
+  max-width: 80%;
+  background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  padding: 0.2rem;
+  border-radius: 1rem;
+ display: flex;
+ justify-content: end;
+}
+.circle {
+  background-color: var(--Pale-Blue);
+  padding: 0.25rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+
+
+
+
+.white-box {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: -2rem;
+  right: 2rem ;
+  left: 60%;
+  bottom: 9rem;
+  z-index: 4;
+}
+.black-numbers {
+  font-size: 2.25rem;
+}
+
+.triangle {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border-left: 25px solid transparent;
+  border-top: 25px solid var(--Pale-Blue);
+}
+
+}
